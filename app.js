@@ -43,7 +43,7 @@ for (let i = 0; i < tabs.length; i++) {
     // textTag.classList.add("active");
     // console.log(textTag);
 
-    //recheck after
+    //recheck after.
   });
 }
 //dans la boucle
