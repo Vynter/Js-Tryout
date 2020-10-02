@@ -10,6 +10,7 @@ var tabs = document.querySelectorAll(".tabs a");
 
 for (let i = 0; i < tabs.length; i++) {
   tabs[i].addEventListener("click", function (e) {
+    console.log(e.target.closest("div"));
     var li = this.parentNode;
     var div = this.parentNode.parentNode.parentNode;
 
@@ -24,7 +25,7 @@ for (let i = 0; i < tabs.length; i++) {
     li.classList.add("active");
 
     //on retire la class active sur le contenu actif
-    console.log(div.querySelector(".tabs-content .active"));
+    //console.log(div.querySelector(".tabs-content .active"));
     div.querySelector(".tab-content.active").classList.remove("active");
 
     //j'ajoute la classe active au bon div
