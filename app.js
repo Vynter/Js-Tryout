@@ -16,6 +16,7 @@ for (let i = 0; i < tabs.length; i++) {
 
     if (li.classList.contains("active")) {
       return false;
+      console.log('aze')
     }
 
     // on retire la classe active de l'onglet actif
